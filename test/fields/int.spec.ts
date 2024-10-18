@@ -954,6 +954,11 @@ describe('Fields', () => {
       const find = await payload.find({
         collection: 'point-fields',
         pagination: false,
+        where: {
+          point: {
+            near: '10, 20, 10000, 10',
+          },
+        },
       })
 
       ;[doc] = find.docs

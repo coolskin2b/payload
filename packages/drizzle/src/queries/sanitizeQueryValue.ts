@@ -212,11 +212,11 @@ export const sanitizeQueryValue = ({
     operator = 'equals'
   }
 
-  if (operator === 'near' || operator === 'within' || operator === 'intersects') {
-    throw new APIError(
-      `Querying with '${operator}' is not supported with the postgres database adapter.`,
-    )
-  }
+  // if (operator === 'near' || operator === 'within' || operator === 'intersects') {
+  //   throw new APIError(
+  //     `Querying with '${operator}' is not supported with the postgres database adapter.`,
+  //   )
+  // }
 
   if (operator === 'contains') {
     formattedValue = `%${formattedValue}%`
