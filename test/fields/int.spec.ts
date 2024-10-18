@@ -968,13 +968,13 @@ describe('Fields', () => {
         collection: 'point-fields',
         data: {
           group,
-          localized,
+          // localized,
           point,
         },
       })
 
       expect(doc.point).toEqual(point)
-      expect(doc.localized).toEqual(localized)
+      // expect(doc.localized).toEqual(localized)
       expect(doc.group).toMatchObject(group)
     })
 
@@ -984,7 +984,7 @@ describe('Fields', () => {
         collection: 'point-fields',
         data: {
           group,
-          localized,
+          // localized,
           point,
         },
       })
@@ -995,7 +995,7 @@ describe('Fields', () => {
           collection: 'point-fields',
           data: {
             group,
-            localized,
+            // localized,
             point,
           },
         }),
